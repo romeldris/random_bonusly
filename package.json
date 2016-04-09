@@ -1,0 +1,39 @@
+{
+  "name": "random_bonusly",
+  "version": "0.0.1",
+  "description": "Slackbot to mention users to practice randomly chosen beginner tricks",
+  "main": "dist/app.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "lint": "eslint src test",
+    "build": "npm run clean && babel --presets es2015 src -d dist",
+    "start": "node dist/app.js",
+    "postinstall": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/romeldris/slackbot-yoyo.git"
+  },
+  "keywords": [
+    "bonusly",
+    "api"
+  ],
+  "author": "romeldris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/romeldris/random_bonusly/issues"
+  },
+  "homepage": "https://github.com/romeldris/random_bonusly#readme",
+  "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "babel-core": "^6.2.1",
+    "babel-eslint": "*",
+    "babel-preset-es2015": "^6.1.18",
+    "dependency-check": "*",
+    "eslint": "*",
+    "rimraf": "*"
+  },
+  "dependencies": {
+    "request": "^2.67.0"
+  }
+}
